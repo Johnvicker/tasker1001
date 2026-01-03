@@ -35,6 +35,7 @@ EMAIL_USER = os.getenv("EMAIL_USER")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 EMAIL_RECIPIENT = os.getenv("EMAIL_RECIPIENT", EMAIL_USER) # Default to self
 
+class MarketDataFetcher:
     def __init__(self):
         self.api_key = os.getenv("COINGECKO_API_KEY")
         if self.api_key:
