@@ -8,6 +8,7 @@ on:
 jobs:
   analyze:
     runs-on: ubuntu-latest
+    environment: .env
     permissions:
       contents: write  # Need write permission to commit report
 
